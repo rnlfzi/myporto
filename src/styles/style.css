@@ -1,0 +1,32 @@
+.bgc {
+  z-index: 10;
+  position: relative;
+}
+
+#svg {
+  z-index: 5;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+#blur {
+  backdrop-filter: blur(20px) !important;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1260px) {
+  #svg {
+    position: fixed;
+    bottom: -20%;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #svg {
+    position: fixed;
+    bottom: -35%;
+    left: 0;
+  }
+}

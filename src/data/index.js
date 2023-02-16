@@ -175,4 +175,11 @@ export const sertifikat = [
     tgl: 'Jan 18, 2023',
     desk: 'Pelajari logika-logika dasar dalam pemrograman dimulai dari jenis-jenis logika pemrograman, gerbang logika, hingga computational thinking.'
   },
+  {
+    judul: 'Belajar Fundamental Front-End Web Development',
+    from: 'Dicoding Indonesia',
+    link: 'https://www.dicoding.com/certificates/4EXG9JORQZRL',
+    tgl: 'Feb 16, 2023',
+    desk: 'Pelajari sintaks ES6, Web Component, dan Build Tools dalam membangun website dengan teknik yang simple, reusable, dan optimized.'
+  },
 ]

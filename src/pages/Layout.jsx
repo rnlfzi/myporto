@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import ButtonSound from "../components/ButtonSound";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import Profile from "../components/Profile";
@@ -32,6 +33,7 @@ const Layout = ({ children }) => {
           <SvgFooter />
         </Container>
       </Container>
+      <ButtonSound />
     </React.Fragment>
   );
 };

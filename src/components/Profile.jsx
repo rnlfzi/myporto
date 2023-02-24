@@ -12,7 +12,7 @@ const Profile = ({ datas }) => {
   const number = [7, 5, 6, 6, 3, 4, 3];
 
   return (
-    <Card className="border-0 shadow mb-4" id="blur">
+    <Card className="border-0 shadow mb-4 " id="blur">
       <Lottie animationData={anim} height={250} width={250} loop={true} />
       <Card.Header className="border-0 shadow fs-5 fw-bold text-center">
         Reynald Faidzilah Ahmad

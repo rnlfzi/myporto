@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Container, Accordion, ListGroup, Badge } from "react-bootstrap";
+import { MdWork } from 'react-icons/md'
 
 const Work = ({ works }) => {
   return (
@@ -16,7 +17,10 @@ const Work = ({ works }) => {
                 eventKey={i}
                 className="border-0 border-bottom bg-light"
               >
-                <Accordion.Header>{work.pt}</Accordion.Header>
+                <Accordion.Header>
+                  <MdWork size={'1.5em'} className="me-1 bg-warning rounded-circle p-1"/>
+                  {work.pt}
+                </Accordion.Header>
                 <Accordion.Body>
                   <ListGroup.Item
                     as="li"

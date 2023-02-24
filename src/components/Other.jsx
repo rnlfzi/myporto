@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Card, Badge, Nav } from "react-bootstrap";
+import { BiLinkAlt } from 'react-icons/bi';
 
 const Other = ({ judul, from, link, tgl, desk }) => {
   return (
@@ -20,10 +21,10 @@ const Other = ({ judul, from, link, tgl, desk }) => {
         <Card.Footer className="d-grid justify-content-center border-0">
           <Nav.Link
             style={{ maxWidth: "100px" }}
-            className="bg-primary text-center rounded-pill px-3 py-1 text-white"
+            className="bg-primary text-center rounded-pill px-3 py-1 text-white d-flex align-items-center gap-1"
             href={link}
           >
-            SHOW
+            <BiLinkAlt />{' '}SHOW
           </Nav.Link>
         </Card.Footer>
       </Card>

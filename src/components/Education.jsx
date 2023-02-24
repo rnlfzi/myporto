@@ -1,5 +1,6 @@
 import React from "react";
 import { Accordion, ListGroup, Badge, Card, Container } from "react-bootstrap";
+import { MdSchool } from 'react-icons/md';
 
 const Education = ({ educations }) => {
   return (
@@ -17,7 +18,10 @@ const Education = ({ educations }) => {
                 eventKey={i}
                 className="border-0 border-bottom bg-light"
               >
-                <Accordion.Header>{education.judul}</Accordion.Header>
+                <Accordion.Header>
+                  <MdSchool size={'1.5em'} className="me-1 bg-warning rounded-circle p-1"/>
+                  {education.judul}
+                </Accordion.Header>
                 <Accordion.Body>
                   <ListGroup.Item
                     as="li"

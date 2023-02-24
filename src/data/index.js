@@ -183,3 +183,5 @@ export const sertifikat = [
     desk: 'Pelajari sintaks ES6, Web Component, dan Build Tools dalam membangun website dengan teknik yang simple, reusable, dan optimized.'
   },
 ]
+
+export const text = 'Selamat datang di my porto web. Hai gue Reynald. Salam kenal!'

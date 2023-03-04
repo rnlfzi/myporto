@@ -6,7 +6,7 @@ import { FaWhatsapp, FaInstagram, FaTelegram } from "react-icons/fa";
 import { AiFillGitlab } from "react-icons/ai";
 
 const Navigation = () => {
-  const links = ["Project", "Pictures", "Certificate"];
+  const links = ["Project", "Certificate", "Pictures"];
   const sosmeds = [
     {
       icon: <FaWhatsapp />,

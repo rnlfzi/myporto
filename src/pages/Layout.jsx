@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import Profile from "../components/Profile";
 import SvgFooter from "../components/SvgFooter";
-import { data } from "../data";
+import { data, footer } from "../data";
 
 const Layout = ({ children }) => {
   const [datas, setDatas] = React.useState(null);
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
             <Col sm={12} md={8} lg={9}>
               <Navigation />
               {children}
-              <Footer />
+              <Footer footer={footer}/>
             </Col>
           </Row>
           <SvgFooter />

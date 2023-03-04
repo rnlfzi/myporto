@@ -35,11 +35,11 @@ const Skill = ({ skills }) => {
             return <div key={i}>{icon}</div>;
           })}
         </Container>
-        {skills.map((skill, i) => {
+        {skills?.map((skill, i) => {
           return (
             <Container key={i}>
-              <Form.Label>{skill.skill}</Form.Label>
-              <ProgressBar animated now={skill.value} />
+              <Form.Label>{skill?.skill}</Form.Label>
+              <ProgressBar animated now={skill?.value} />
             </Container>
           );
         })}

@@ -1,4 +1,5 @@
 export const data = {
+  nama: "Reynald Faidzilah Ahmad",
   no: "0895370077222",
   email: "rfaidzilah@gmail.com",
   github: "rnlfzi",
@@ -184,4 +185,9 @@ export const sertifikat = [
   },
 ]
 
-export const text = 'Selamat datang di my porto web. Hai gue Reynald. Salam kenal!'
+export const text = 'Selamat datang di my porto web. Hai gue Reynald. Salam kenal!';
+
+export const footer = {
+  id: 'Rnlfzi.',
+  content: '©2023 All rights reserved. Designed by rnlfzi.'
+}

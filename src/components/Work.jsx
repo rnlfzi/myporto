@@ -10,7 +10,7 @@ const Work = ({ works }) => {
       </Card.Header>
       <Card.Body>
         <Accordion defaultActiveKey="0" className="shadow rounded">
-          {works.map((work, i) => {
+          {works?.map((work, i) => {
             return (
               <Accordion.Item
                 key={i}
@@ -19,7 +19,7 @@ const Work = ({ works }) => {
               >
                 <Accordion.Header>
                   <MdWork size={'1.5em'} className="me-1 bg-warning rounded-circle p-1"/>
-                  {work.pt}
+                  {work?.pt}
                 </Accordion.Header>
                 <Accordion.Body>
                   <ListGroup.Item
@@ -27,12 +27,12 @@ const Work = ({ works }) => {
                     className="d-grid gap-2"
                   >
                     <div className="d-flex justify-content-between">
-                      <div className="fw-bold">{work.jabatan}</div>
+                      <div className="fw-bold">{work?.jabatan}</div>
                       <Badge bg="warning" className="text-black my-auto" pill>
-                        {work.tahun}
+                        {work?.tahun}
                       </Badge>
                     </div>
-                    <p>{work.deskripsi}</p>
+                    <p>{work?.deskripsi}</p>
                   </ListGroup.Item>
                 </Accordion.Body>
               </Accordion.Item>

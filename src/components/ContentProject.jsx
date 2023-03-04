@@ -17,7 +17,7 @@ const ContentProject = ({ projects }) => {
             Project List
           </Card.Header>
           {projects.map((project, i) => {
-            return <Project key={i} {...project} />;
+            return <Project key={i} project={project} />;
           })}
         </Card>
       )}

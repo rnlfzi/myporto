@@ -20,7 +20,7 @@ const Education = ({ educations }) => {
               >
                 <Accordion.Header>
                   <MdSchool size={'1.5em'} className="me-1 bg-warning rounded-circle p-1"/>
-                  {education.judul}
+                  {education?.judul}
                 </Accordion.Header>
                 <Accordion.Body>
                   <ListGroup.Item
@@ -29,14 +29,14 @@ const Education = ({ educations }) => {
                   >
                     <div className="d-flex justify-content-between">
                       <div>
-                        <h6 className="fw-bold">{data.sekolah}</h6>
-                        {data.program}
+                        <h6 className="fw-bold">{data?.sekolah}</h6>
+                        {data?.program}
                       </div>
                       <Badge bg="warning" className="text-black my-auto" pill>
-                        {data.th_lulus}
+                        {data?.th_lulus}
                       </Badge>
                     </div>
-                    <p>{data.deskripsi}</p>
+                    <p>{data?.deskripsi}</p>
                   </ListGroup.Item>
                 </Accordion.Body>
               </Accordion.Item>

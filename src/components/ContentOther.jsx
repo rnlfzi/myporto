@@ -14,7 +14,7 @@ const ContentOther = ({ others }) => {
       ) : (
         <Card className="shadow mt-4 border-0 gap-4 p-4" id="blur">
           {others.map((other, i) => {
-            return <Other key={i} {...other} />;
+            return <Other key={i} other={other} />;
           })}
         </Card>
       )}

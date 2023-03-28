@@ -1,11 +1,14 @@
 import React from "react";
 import { Accordion, ListGroup, Badge, Card, Container } from "react-bootstrap";
-import { MdSchool } from 'react-icons/md';
+import { MdSchool } from "react-icons/md";
 
 const Education = ({ educations }) => {
   return (
-    <Container className="m-0 p-0" >
-      <Card.Header className="text-center border-0 shadow fs-5 fw-bold bg-light bg-opacity-50" id="blur">
+    <Container className="m-0 p-0">
+      <Card.Header
+        className="text-center border-0 shadow fs-5 fw-bold bg-light bg-opacity-50"
+        id="blur"
+      >
         Education History
       </Card.Header>
       <Card.Body>
@@ -19,14 +22,14 @@ const Education = ({ educations }) => {
                 className="border-0 border-bottom bg-light"
               >
                 <Accordion.Header>
-                  <MdSchool size={'1.5em'} className="me-1 bg-warning rounded-circle p-1"/>
+                  <MdSchool
+                    size={"1.5em"}
+                    className="me-1 bg-warning rounded-circle p-1"
+                  />
                   {education?.judul}
                 </Accordion.Header>
                 <Accordion.Body>
-                  <ListGroup.Item
-                    as="li"
-                    className="d-grid gap-2"
-                  >
+                  <ListGroup.Item as="li" className="d-grid gap-2">
                     <div className="d-flex justify-content-between">
                       <div>
                         <h6 className="fw-bold">{data?.sekolah}</h6>

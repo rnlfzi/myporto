@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Card, Badge, Nav } from "react-bootstrap";
-import { BiLinkAlt } from 'react-icons/bi';
+import { BiLinkAlt } from "react-icons/bi";
 
 const Other = ({ other }) => {
   return (
@@ -24,7 +24,7 @@ const Other = ({ other }) => {
             className="bg-primary text-center rounded-pill px-3 py-1 text-white d-flex align-items-center gap-1"
             href={other?.link}
           >
-            <BiLinkAlt />{' '}SHOW
+            <BiLinkAlt /> SHOW
           </Nav.Link>
         </Card.Footer>
       </Card>

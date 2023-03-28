@@ -6,6 +6,7 @@ import { FaWhatsapp, FaInstagram, FaTelegram } from "react-icons/fa";
 import { AiFillGitlab } from "react-icons/ai";
 
 const Navigation = () => {
+  const [active, setActive] = React.useState("");
   const links = ["Project", "Certificate", "Pictures"];
   const sosmeds = [
     {
@@ -14,7 +15,7 @@ const Navigation = () => {
     },
     {
       icon: <FaInstagram />,
-      link: "https://www.instagram.com/rnlfzi_",
+      link: "https://www.instagram.com/rnl________",
     },
     {
       icon: <FaTelegram />,
@@ -26,8 +27,24 @@ const Navigation = () => {
     },
   ];
 
+  const showPathName = () => {
+    const pathname = window.location.pathname;
+
+    if (pathname === "/Project") return "Project";
+    else if (pathname === "/Certificate") return "Certificate";
+    else if (pathname === "/Pictures") return "Pictures";
+    else return "";
+  };
+
+  React.useEffect(() => {
+    setActive(showPathName());
+  }, []);
+
   return (
-    <Container id="navbar" className="bg-light shadow rounded p-0 d-flex justify-content-between">
+    <Container
+      id="navbar"
+      className="bg-light shadow rounded p-0 d-flex justify-content-between"
+    >
       <Nav>
         <Nav.Item className="bg-warning rounded-start">
           <NavLink to="/" className="p-3 d-flex align-items-center">
@@ -39,7 +56,11 @@ const Navigation = () => {
             <Nav.Item key={i}>
               <NavLink
                 to={`/${link}`}
-                className="link-dark fw-bold p-3 d-flex align-items-center nav-link"
+                style={{
+                  color: link === active ? "orange" : "black",
+                  borderBottom: link === active ? "3px solid orange" : "none",
+                }}
+                className=" fw-bold p-3 d-flex align-items-center nav-link"
               >
                 {link}
               </NavLink>

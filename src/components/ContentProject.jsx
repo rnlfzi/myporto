@@ -8,7 +8,10 @@ const ContentProject = ({ projects }) => {
   return (
     <>
       {projects.length === 0 ? (
-        <Container className="d-flex align-items-center justify-content-center h-100 gap-2 fw-bold" id="blur">
+        <Container
+          className="d-flex align-items-center justify-content-center h-100 gap-2 fw-bold"
+          id="blur"
+        >
           <Lottie animationData={anim} height={250} width={250} loop={true} />
         </Container>
       ) : (

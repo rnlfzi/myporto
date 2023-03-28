@@ -10,6 +10,7 @@ import {
   SiExpress,
   SiMongodb,
   SiMysql,
+  SiNextdotjs,
 } from "react-icons/si";
 
 const Skill = ({ skills }) => {
@@ -23,6 +24,7 @@ const Skill = ({ skills }) => {
     <SiExpress />,
     <SiMongodb />,
     <SiMysql />,
+    <SiNextdotjs />,
   ];
   return (
     <Container className="m-0 p-0">

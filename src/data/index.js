@@ -63,7 +63,7 @@ export const work = [
 export const skill = [
   {
     skill: "JavaScripts",
-    value: 75
+    value: 80
   },
   {
     skill: "HTML",
@@ -75,7 +75,7 @@ export const skill = [
   },
   {
     skill: "React JS",
-    value: 75
+    value: 80
   },
   {
     skill: "React Bootstrap",
@@ -83,7 +83,7 @@ export const skill = [
   },
   {
     skill: "Redux",
-    value: 40
+    value: 60
   },
   {
     skill: "Express",
@@ -97,12 +97,16 @@ export const skill = [
     skill: "MySQL",
     value: 50
   },
+  {
+    skill: "Next JS",
+    value: 25
+  },
 ]
 
 export const project = [
   {
     judul: 'Re App',
-    sampul: 'reapp(3).png',
+    sampul: 'cover.jpeg',
     gambar: ['reapp(1).png', 'reapp(2).png', 'reapp(3).png'],
     link: 'http://re-app-taupe.vercel.app',
     tech_stack: 'React JS dan Javascript',
@@ -110,7 +114,7 @@ export const project = [
   },
   {
     judul: 'Open Space App',
-    sampul: 'OSA.png',
+    sampul: 'cover.jpeg',
     gambar: [],
     link: 'https://open-space-app-teal.vercel.app',
     tech_stack: 'React JS dan Javascript',
@@ -118,7 +122,7 @@ export const project = [
   },
   {
     judul: 'Notes App',
-    sampul: 'notes.png',
+    sampul: 'cover.jpeg',
     gambar: [],
     link: 'https://notes-app-gules-rho.vercel.app/',
     tech_stack: 'React JS dan Javascript',
@@ -182,6 +186,13 @@ export const sertifikat = [
     link: 'https://www.dicoding.com/certificates/4EXG9JORQZRL',
     tgl: 'Feb 16, 2023',
     desk: 'Pelajari sintaks ES6, Web Component, dan Build Tools dalam membangun website dengan teknik yang simple, reusable, dan optimized.'
+  },
+  {
+    judul: 'Belajar Membuat Aplikasi Back-End untuk Pemula',
+    from: 'Dicoding Indonesia',
+    link: 'https://www.dicoding.com/certificates/6RPNW3K25P2M',
+    tgl: 'Mar 27, 2023',
+    desk: 'Pelajari dasar dalam membangun RESTful API, dari HTTP server, routing, hingga membangun Back-End untuk aplikasi yang nyata.'
   },
 ]
 

@@ -15,7 +15,7 @@ const Profile = ({ datas }) => {
     <Card className="border-0 shadow mb-4 " id="blur">
       <Lottie animationData={anim} height={250} width={250} loop={true} />
       <Card.Header className="border-0 shadow fs-5 fw-bold text-center">
-        {datas?.nama}
+        {datas === null ? <Placeholder xs={11} /> : datas?.nama}
       </Card.Header>
       <Card.Body className="d-grid gap-2 p-4">
         {datas === null ? (
@@ -32,15 +32,15 @@ const Profile = ({ datas }) => {
         ) : (
           <IconContext.Provider value={{ color: "grey", size: "1.4rem" }}>
             <Card.Text>{datas?.bio}</Card.Text>
-            <Nav.Link href="/home" className={styleBtn}>
+            <Nav.Link href="http://wa.me/62895370077222" className={styleBtn}>
               <MdCall />
               {datas?.no}
             </Nav.Link>
-            <Nav.Link href="/home" className={styleBtn}>
+            <Nav.Link href="mailto:rfaidzilah@gmailcom" className={styleBtn}>
               <MdEmail />
               {datas?.email}
             </Nav.Link>
-            <Nav.Link href="/home" className={styleBtn}>
+            <Nav.Link href="https://github.com/rnlfzi" className={styleBtn}>
               <AiFillGithub />
               {datas?.github}
             </Nav.Link>

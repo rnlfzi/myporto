@@ -5,7 +5,10 @@ const Project = ({ project }) => {
   return (
     <Container className="m-0 p-0">
       <Card className="m-4 border-0 shadow" id="blur">
-        <Card.Img variant="top" src={require(`../assets/project/${project?.sampul}`)} />
+        <Card.Img
+          variant="top"
+          src={require(`../assets/project/${project?.sampul}`)}
+        />
         <Card.Header className="text-center border-0 shadow fs-5 fw-bold bg-light bg-opacity-50">
           {project?.judul}
         </Card.Header>

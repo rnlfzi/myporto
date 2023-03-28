@@ -36,10 +36,11 @@ const ButtonSound = () => {
         placement="left"
         overlay={
           <Popover className="border-0 shadow">
-            <Popover.Header as="h3"></Popover.Header>
+            <Popover.Header className="text-center">
+              <strong>My Adress</strong>, Scan!!!
+            </Popover.Header>
             <Popover.Body className="d-grid justify-content-center">
-              <p className="text-center"><strong>My Address</strong>, Scan !!!</p>
-              <img src={require('../assets/map.png')} alt="map" width="150px" />
+              <img src={require("../assets/map.png")} alt="map" width="150px" />
             </Popover.Body>
           </Popover>
         }

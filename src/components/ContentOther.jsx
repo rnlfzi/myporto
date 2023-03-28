@@ -8,7 +8,10 @@ const ContentOther = ({ others }) => {
   return (
     <>
       {others.length === 0 ? (
-        <Container className="d-flex align-items-center justify-content-center h-100 shadow mt-4 rounded" id="blur">
+        <Container
+          className="d-flex align-items-center justify-content-center h-100 shadow mt-4 rounded"
+          id="blur"
+        >
           <Lottie animationData={anim} height={250} width={250} loop={true} />
         </Container>
       ) : (
@@ -20,6 +23,6 @@ const ContentOther = ({ others }) => {
       )}
     </>
   );
-}
+};
 
-export default ContentOther
+export default ContentOther;

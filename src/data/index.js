@@ -3,7 +3,7 @@ export const data = {
   no: "0895370077222",
   email: "rfaidzilah@gmail.com",
   github: "rnlfzi",
-  bio: "Saya adalah seorang FullStack Web Dev Junior di PT. Viapulsa Global Indonesia. Saya mengerti cara membangun dan mengembangkan website serta aplikasi mobile dengan bahasa pemgrograman Javascripts"
+  bio: "Saya adalah seorang Frontend Dev Junior di PT. Viapulsa Global Indonesia. Saya mengerti cara membangun dan mengembangkan website serta aplikasi mobile dengan bahasa pemgrograman Javascripts"
 }
 
 export const education = [
@@ -49,14 +49,14 @@ export const work = [
   {
     pt: "PT Viapulsa Global Indonesia",
     jabatan: "Costumer Service",
-    tahun: "2020 - 2022",
+    tahun: "2020 - 2023",
     deskripsi: "Saya melayani costumer yang melakukan transaksi via aplikasi Viapulsa, terbiasa dengan kerja cepat karena banyak costumer yang saya layani dan juga ketelitian yang tinggi dalam melakukan proses transaksi sesuai SOP yang berlaku."
   },
   {
     pt: "PT Viapulsa Global Indonesia",
-    jabatan: "Staff IT",
-    tahun: "2022 - present",
-    deskripsi: "Saya mengembangkan projek, mulai dari membuat admin web dan mobile aplikasi. Melakukan perbaikan jika terjadi bug pada aplikasi yang sedang di kembangkan, dengan menggunakan bahasa pemrograman Javascripts dengan framework React JS"
+    jabatan: "Frontend",
+    tahun: "2023 - present",
+    deskripsi: "Saya mengembangkan projek, mulai dari membuat admin web dan mobile aplikasi. Melakukan maintenance pada aplikasi yang sedang di kembangkan, dengan menggunakan bahasa pemrograman Javascripts dengan framework React JS"
   },
 ]
 
